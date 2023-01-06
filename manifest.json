@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "melatonin2",
+    "description": "go to sleep tooth girl",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "js": [
+          "main.js"
+        ],
+        "matches": [
+          "https://web.fmovies.to/movie/*",
+          "https://web.fmovies.to/series/*"
+        ],
+        "all_frames": true
+      }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "mellies"
+    }
+  }
